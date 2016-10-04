@@ -18,7 +18,7 @@ To run this app, you will need the following stack of technologies:
 For development mode:
 
 1. Run `npm run watch` 
-2. Run 'nodemon server.js`
+2. Run `nodemon server.js`
 
 App will be available at `localhost:3000`
 
