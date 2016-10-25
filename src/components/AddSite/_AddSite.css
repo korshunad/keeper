@@ -1,0 +1,29 @@
+.siteadder {
+  display:inline;
+  position:relative;
+  padding:15px;
+}
+.siteinput {
+  border-style:solid;
+  position:relative;
+  height:26px;
+  width:300px;
+  color:white;
+border-color:white;
+padding:2px;
+padding-left:8px;
+margin:10px 0px 10px 10px;
+background:transparent;
+  border-radius: 15px;
+border-width: 2px;
+font-size:20px;
+  font-family:'Comfortaa', cursive;
+}
+:focus {outline:none;}
+p {
+  display:inline-block;
+  color:white;
+  position:relative;
+font-size:28px;
+margin:10px;
+}

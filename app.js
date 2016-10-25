@@ -11,3 +11,4 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.static('dist'));
+app.use(express.static('public'));

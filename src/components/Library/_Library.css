@@ -1,0 +1,29 @@
+.lib p {
+color:#FF8008;
+position:relative;
+display:inline-block;
+margin: 40px 30px 10px 30px;
+font-size:2em;
+}
+.folders {
+display: flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+}
+.folder {
+width:130px;
+height:130px;
+position:relative;
+border: 3px solid #FF8008;
+margin:20px;
+display: flex;
+flex-wrap:wrap;
+justify-content: center; /* align horizontal */
+align-items: center;
+}
+
+.folder span {
+color:#FF8008;
+font-size:1.7em;
+}

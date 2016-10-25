@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "browserify -t [ babelify --presets [ es2015 react ] ] ./src/main.js -o ./dist/bundle.js",
-    "watch": "NODE_PATH=./src watchify -t [ babelify --presets [ es2015 react ] ] -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] ./src/main.js -o ./dist/bundle.js -v"
+    "build": "NODE_PATH=./src browserify -p [css-modulesify -o dist/main.css --json dist/css-modules.json --global true] -t [ babelify --presets [ es2015 react ] ] ./src/main.js -o ./dist/bundle.js",
+    "watch": "NODE_PATH=./src watchify -p [css-modulesify -o dist/main.css --json dist/css-modules.json --global true] -t [ babelify --presets [ es2015 react ] ] -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] ./src/main.js -o ./dist/bundle.js -v"
   },
   "repository": {
     "type": "git",
@@ -25,17 +25,22 @@
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
     "browserify-livereload": "^1.0.8",
+    "unique-id-mixin": "^1.0.0",
     "watchify": "^3.7.0"
   },
   "dependencies": {
     "babel-register": "^6.14.0",
     "browserify": "^13.1.0",
     "browserify-directory": "^1.0.2",
+    "css-modulesify": "^0.25.1",
+    "cssify": "^1.0.3",
     "express": "^4.14.0",
     "nodemon": "^1.10.2",
     "pug": "^2.0.0-beta6",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-tag-input": "^4.3.3",
+    "react-tagsinput": "^3.13.6",
     "watchify": "^3.7.0"
   }
 }
