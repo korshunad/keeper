@@ -3,6 +3,9 @@ margin: 0px;
 }
 body {
   margin: 0px;
+  background: #FF8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF8008 , #FFC837); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF8008 , #FFC837); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .app {
 margin: 0px;
@@ -14,15 +17,14 @@ margin: 0px;
 
 .starter {
   font-color: #000B29;
-  background: #FF8008; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FF8008 , #FFC837); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FF8008 , #FFC837); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   width:100%;
   height:100%;
   position:relative;
+  text-align:center;
   display:inline-block;
+  padding-top:40px;
 margin:0px auto;
-padding:15px 0px 15px 0px;
 }
 
 .second {
@@ -35,6 +37,6 @@ margin:0px;
 position:relative;
 display:inline-block;
 width:100%;
-top:10px;
+top:80px;
 margin:0px;
 }

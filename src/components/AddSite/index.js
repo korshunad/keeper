@@ -7,7 +7,7 @@ class AddSite extends React.Component {
         }
   render() {
       return (
-        <div className={styles.siteadder}> <p>Add a link</p> <input  className={styles.siteinput} type="text" placeholder="somemoretext" /></div>
+        <div className={styles.siteadder}>  <input  className={styles.siteinput} type="text" placeholder="Add new link here..." /></div>
       )
     }
 

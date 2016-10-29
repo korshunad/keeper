@@ -8,7 +8,7 @@ class Library extends React.Component {
   render() {
     return (
       <div className={styles.lib}>
-        <p>Library</p>
+        <p>Click to browse tagged links</p>
         <div className={styles.folders}>
           <div className={styles.folder}><span>Learn</span></div>
           <div className={styles.folder}><span>JS</span></div>

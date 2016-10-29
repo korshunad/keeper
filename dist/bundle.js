@@ -29183,14 +29183,8 @@ var AddSite = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: _AddSite2.default.siteadder },
-        ' ',
-        _react2.default.createElement(
-          'p',
-          null,
-          'Add a link'
-        ),
-        ' ',
-        _react2.default.createElement('input', { className: _AddSite2.default.siteinput, type: 'text', placeholder: 'somemoretext' })
+        '  ',
+        _react2.default.createElement('input', { className: _AddSite2.default.siteinput, type: 'text', placeholder: 'Add new link here...' })
       );
     }
   }]);
@@ -29248,7 +29242,7 @@ var Library = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'Library'
+          'Click to browse tagged links'
         ),
         _react2.default.createElement(
           'div',
@@ -29388,30 +29382,7 @@ var Random = function (_React$Component) {
             _react2.default.createElement('i', { className: _Random2.default.fa + ' ' + _Random2.default.fabars })
           )
         ),
-        _react2.default.createElement(
-          'div',
-          { className: _Random2.default.page },
-          _react2.default.createElement('img', { src: '/assets/example_site.jpg', className: _Random2.default.screenshot }),
-          _react2.default.createElement(
-            'div',
-            { className: _Random2.default.tags },
-            _react2.default.createElement(
-              'div',
-              { className: _Random2.default.tag },
-              'Learn'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: _Random2.default.tag },
-              'Music'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: _Random2.default.tag },
-              'Stuff'
-            )
-          )
-        )
+        _react2.default.createElement('div', { className: _Random2.default.page })
       );
     }
   }]);
@@ -29469,7 +29440,7 @@ var Tags = _react2.default.createClass({
       { className: _Tags2.default.tagging },
       _react2.default.createElement(_reactTagInput.WithContext, {
         tags: tags,
-        placeholder: 'Tag',
+        placeholder: '+Tag',
         handleDelete: this.handleDelete,
         handleAddition: this.handleAddition })
     );

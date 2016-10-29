@@ -21,9 +21,10 @@ height:50px;
   display:inline-block;
   font-family:'Comfortaa', cursive;
   padding: 2px 5px;
-  font-size:24px;
+  font-size:18px;
   color: white !important;
   outline: none;
+  cursor:pointer;
   border: none;
   width: 100px;
   background-color: transparent;
@@ -41,30 +42,55 @@ height:50px;
   color: #FFF;
   padding: 2px 5px 5px 7px;
   margin: 2px 2px 2px 2px;
+  box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
   position: relative;
   border-radius: 20px;
-  font-size:24px;
+  font-size:18px;
 }
 :global(body .ReactTags__remove) {
   padding-left:2px;
   padding-right:1px;
 }
-::-webkit-input-placeholder {
+
+:global(.ReactTags__tagInput ::-webkit-input-placeholder) {
   color: white;
-  font-size:24px;
+  text-decoration-style: dotted;
+  font-size:18px;
+}
+
+:global(.ReactTags__tagInput :-moz-placeholder) { /* Firefox 18- */
+  color: white;
+  text-decoration-style: dotted;
+  font-size:18px;
+}
+
+:global(.ReactTags__tagInput ::-moz-placeholder) {  /* Firefox 19+ */
+  color: white;
+  text-decoration-style: dotted;
+  font-size:18px;
+}
+
+:global(.ReactTags__tagInput :-ms-input-placeholder) {
+  color: white;
+  text-decoration-style: dotted;
+  font-size:18px;
+}
+::-webkit-input-placeholder {
+  color: #555;
+  font-size:18px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: white;
-  font-size:24px;
+  color: #555;
+  font-size:18px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: white;
-  font-size:24px;
+  color: #555;
+  font-size:18px;
 }
 
 :-ms-input-placeholder {
-  color: white;
-  font-size:24px;
+  color: #555;
+  font-size:18px;
 }

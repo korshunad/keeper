@@ -28,7 +28,7 @@ const Tags=React.createClass({
          <div className={styles.tagging}>
            <ReactTags
            tags={tags}
-           placeholder='Tag'
+           placeholder='+Tag'
                handleDelete={this.handleDelete}
                handleAddition={this.handleAddition} />
                      </div>
